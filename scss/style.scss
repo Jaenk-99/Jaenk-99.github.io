@@ -353,6 +353,7 @@ h1, h2, h3, h4, h5,
 	position: inherit;
 	background-size: cover;
 	background-repeat: no-repeat;
+	margin-bottom: 7em;
 	@include media-breakpoint-down(md){
 	}
 	.overlay{
@@ -1384,7 +1385,7 @@ textarea.form-control {
 .img,
 .blog-img,
 .user-img{
-	background-size: cover;
+	background-size: auto 100%;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
