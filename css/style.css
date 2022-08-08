@@ -8393,7 +8393,7 @@ h1, h2, h3, h4, h5,
   position: inherit;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 7em; }
+  }
   .hero-wrap .overlay {
     position: absolute;
     top: 0;
@@ -8703,6 +8703,10 @@ h1, h2, h3, h4, h5,
     font-size: 30px;
     margin-bottom: 30px;
     color: #3e64ff; }
+
+#education-section {
+  padding-top: 3em;
+}
 
 .resume-wrap {
   width: 100%;
@@ -9080,7 +9084,7 @@ textarea.form-control {
 .ftco-footer {
   font-size: 16px;
   background: #000000;
-  padding: 7em 0;
+  padding: 3em 0;
   z-index: 0; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
