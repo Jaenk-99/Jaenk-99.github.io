@@ -13201,9 +13201,23 @@ textarea.form-control {
   }
 }
 
+#introduce-section{
+  padding: 5em 0;
+}
+
 .heading-section {
   position: relative;
+  margin-bottom: 15px;
 }
+
+.heading-section2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+}
+
 
 .heading-section .subheading {
   font-size: 13px;
@@ -13215,7 +13229,43 @@ textarea.form-control {
   letter-spacing: 3px;
 }
 
+.heading-section2 .subheading {
+  font-size: 13px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 3px;
+}
+
+.subheadline {
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 3px;
+}
+
+.introduce {
+  font-size: 16px;
+  font-weight: 500;
+  color: #666666;
+}
+
 .heading-section h1.big {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  font-size: 7vw;
+  color: rgba(255, 255, 255, 0.1);
+  z-index: -1;
+  font-weight: 900;
+}
+
+.heading-section2 h1.big {
   position: absolute;
   top: 0px;
   left: 0;
@@ -13229,18 +13279,59 @@ textarea.form-control {
   right: 0;
 }
 
+.heading-section2 h1.big.big-2 {
+  right: 0;
+}
+
 .heading-section h2 {
   font-size: 50px;
   font-weight: 700;
 }
 
+.heading-section2 h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+
 .heading-section h2 span {
   font-weight: 400;
+}
+
+.heading-section2 h2 span {
+  font-weight: 400;
+}
+
+.introduce-br{
+  display: none;
 }
 
 @media (max-width: 767.98px) {
   .heading-section h2 {
     font-size: 38px;
+  }
+
+  .heading-section2 h2 {
+    font-size: 38px;
+  }
+
+  .subheadline {
+    font-size: 16px;
+  }
+
+  .heading-section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+  }
+
+  .introduce{
+    font-size: 13px;
+  }
+
+  .introduce-br{
+    display: block;
   }
 }
 
@@ -13248,11 +13339,23 @@ textarea.form-control {
   color: rgba(255, 255, 255, 0.9) !important;
 }
 
+.heading-section2.heading-section-white .subheading {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
 .heading-section.heading-section-white h2 {
   color: #fff;
 }
 
+.heading-section2.heading-section-white h2 {
+  color: #fff;
+}
+
 .heading-section.heading-section-white p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.heading-section2.heading-section-white p {
   color: rgba(255, 255, 255, 0.9);
 }
 
