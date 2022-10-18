@@ -56,13 +56,13 @@
         var engine = null;
         var scene = null;
         var sceneToRender = null;
-        // var createDefaultEngine = function () { return new BABYLON.Engine(canvas, true, { preserveDrawingBuffer: true, stencil: true, disableWebGL2Support: false }); };
+        var createDefaultEngine = function () { return new BABYLON.Engine(canvas, true, { preserveDrawingBuffer: true, stencil: true, disableWebGL2Support: false }); };
 
-        var createDefaultEngine = async function () {
-            var engine = new BABYLON.WebGPUEngine(canvas);
-            await engine.initAsync();
-            return engine;
-        };
+        // var createDefaultEngine = async function () {
+        //     var engine = new BABYLON.WebGPUEngine(canvas);
+        //     await engine.initAsync();
+        //     return engine;
+        // };
 
         var delayCreateScene = function () {
             // Create a scene.
