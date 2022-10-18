@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <title>Babylon.js sample code</title>
+    <title>김재현 리빌더AI 과제 - room</title>
 
     <!-- Babylon.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js"></script>
@@ -57,11 +57,13 @@
         var scene = null;
         var sceneToRender = null;
         // var createDefaultEngine = function () { return new BABYLON.Engine(canvas, true, { preserveDrawingBuffer: true, stencil: true, disableWebGL2Support: false }); };
+
         var createDefaultEngine = async function () {
             var engine = new BABYLON.WebGPUEngine(canvas);
             await engine.initAsync();
             return engine;
         };
+
         var delayCreateScene = function () {
             // Create a scene.
             var scene = new BABYLON.Scene(engine);
